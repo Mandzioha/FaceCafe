@@ -1,0 +1,254 @@
+@import url('fonts.css');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+::selection {
+    color: white;
+    background: #472D2D;
+}
+
+header {
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    /* height: 80px; */
+    /* margin-left: 100px; */
+    margin-right: 15px;
+}
+
+.nav_strap {
+    z-index: 4;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    transition-duration: 0.2s;
+    backdrop-filter: blur(3px);
+}
+
+.hide {
+    top: -90px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.navigator_tab {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.link {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    margin: 0 12.5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.spilled-coffee-beans {
+    background-position: 120%;
+    background-size: 100% 140%;
+    background-image: url(../images/coffee-beans-footer.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    bottom: 1;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 1;
+    z-index: 2;
+    margin-top: -50px;
+    /* Junky ale działa */
+}
+
+footer .strap {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+}
+
+.sketchy {
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 3px solid #333333;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    background: #ffffff;
+    position: relative;
+    /* z-index: 3; */
+
+    &::before {
+        content: "";
+        /* z-index: 3; */
+        border: 2px solid #353535;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
+}
+
+.subpage-section-one {
+    width: 100%;
+    height: 1000px;
+    margin-top: -160px;
+    background-image: url(/subpage/assets/subpage-coffee-background.avif);
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Opcjonalne */
+    /* background-attachment: fixed; */
+}
+
+.subpage-section-one img {
+    width: 500px;
+    margin-top: 300px;
+    box-shadow: 0px 9px 10px 5px black;
+}
+
+/* .subpage-main-album-cover{
+    w
+} */
+
+.polygon {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+}
+
+.To-top {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    box-shadow: 6px 6px 17.5px black;
+    text-decoration: none;
+    color: black;
+}
+
+img::selection {
+    background: #979797a2;
+}
+
+.logo::selection {
+    background: none;
+}
+
+.subpage-section-two {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subpage-section-two h1 {
+    font-size: 3rem;
+    color: black;
+    margin: 100px 0px 50px;
+}
+
+ol {
+    font-size: 1.6rem;
+}
+
+li {
+    margin: 5px 0;
+}
+
+li span {
+    margin: 0 15px;
+}
+
+iframe {
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+}
+
+.ytmusic {
+    margin: 10px;
+    background-color: rgb(196, 33, 33);
+    border-radius: 12px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.ytmusic img {
+    display: block;
+    height: 100%;
+}
+
+.album-link-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
