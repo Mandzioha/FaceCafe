@@ -140,7 +140,7 @@ footer .strap {
     width: 100%;
     height: 1000px;
     margin-top: -160px;
-    background-image: url(/subpage/assets/subpage-coffee-background.avif);
+    background-image: url('assets/subpage-coffee-background.avif');
     background-size: 100% 140%;
     background-repeat: no-repeat;
     display: flex;
