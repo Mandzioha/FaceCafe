@@ -382,3 +382,7 @@ img::selection{
 .logo::selection{
     background: none;
 }
+.mobile{
+    text-align: center;
+    font-size: 2rem;
+}

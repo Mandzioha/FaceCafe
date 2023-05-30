@@ -1,3 +1,6 @@
+if (/Android|iPhone/i.test(navigator.userAgent)) {
+  document.querySelector('body').innerHTML = '<h1 class="mobile">Currently only on Desktop ;)</h1>';
+}
 const navstrap = document.querySelector('#navstrap');
 
 window.addEventListener('scroll', ()=> {
