@@ -1,0 +1,373 @@
+@import url('fonts.css');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+::selection{
+    color: white;
+    background: #472D2D;
+}
+
+header {
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    /* height: 80px; */
+    /* margin-left: 100px; */
+    margin-right: 15px;
+}
+
+.nav_strap {
+    z-index: 4;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    transition-duration: 0.2s;
+    backdrop-filter: blur(3px);
+}
+.hide{
+    top: -90px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.navigator_tab {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.link {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    margin: 0 12.5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 90px;
+    margin-right: 85px;
+    width: 300px;
+    height: 400px;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.dropdown-menu a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: right;
+    
+}
+.active{
+    visibility: visible;
+}
+
+.section-one {
+    width: 100%;
+    height: 780px;
+    margin-top: -160px;
+    background-image: url(../Images/coffee_background.png);
+    background-size: 100% 900px;
+    background-repeat: no-repeat;
+    /* Opcjonalne */
+    /* background-attachment: fixed; */
+}
+
+.polygon {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+}
+
+.ad_wrapper {
+    padding: 160px;
+    height: 400px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad_text {
+    width: 300px;
+    color: white;
+    text-shadow: 1px -1px black;
+}
+
+.albumcover {
+    width: 400px;
+}
+
+.button {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: block;
+    transition-duration: 0.25s;
+}
+
+.button:hover {
+    background-color: #472D2D;
+    color: white;
+    border: 1px white solid;
+}
+
+.section-two {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus {
+    padding-top: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+.sub-photo {
+    margin-top: -15px;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+.aboutus h1{
+    margin-top: 50px;
+}
+
+.aboutus p {
+    text-align: justify;
+    width: 620px;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+.products{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products p{
+    text-align: justify;
+    width: 620px;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+.products h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.products-container{
+    width: 100%;
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.To-top {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    box-shadow: 6px 6px 17.5px black;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 1;
+    z-index: 2;
+    margin-top: -50px;
+    /* Junky ale działa */
+}
+.spilled-coffee-beans{
+    background-size: 100% 100%;
+    background-image: url(../images/coffee-beans-footer.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    bottom: 1;
+}
+
+footer .strap {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+}
+
+.sketchy {
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 3px solid #333333;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    background: #ffffff;
+    position: relative;
+    /* z-index: 3; */
+
+    &::before {
+        content: "";
+        /* z-index: 3; */
+        border: 2px solid #353535;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
+}
+
+.product-album-cover{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: gray; */
+    font-size: 0.9rem;
+    margin: 15px;
+    
+}
+.product-album-cover sub{
+    margin: 0px 10px;
+}
+.product-album-cover span{
+    float: right;
+}
+.product-album-cover img{
+    width: 92.5%;
+    margin: 0 auto;
+    margin: 10px;
+}
+.album-img{
+    transition: 0.1s;
+    position: relative;
+}
+.album-img:hover{
+    border-radius: 10px;
+    width: 94.5%;
+    right: 1.25px;
+    box-shadow: 0px 10px 10px black; 
+    /* cursor: pointer; */
+    opacity: 0.87;
+}
+.latest{
+    width: 415px;
+    height: 430px;
+    margin-top: 20px;
+}
+.latest::after{
+    font-size: 1.45rem;
+    font-weight: 600;
+    position: absolute;
+    content: '← Our Newest Coffee';
+    transform: translate(370px, -40px) rotate(5deg);
+}
+
+.latest img{
+    z-index: 3;
+    width: 94.5%;
+    margin: 0 auto;
+    margin: 10px 10px 0px 10px;
+    transition-duration: 0.5s;
+}
+
+.latest img:hover{
+    width: 95.5%;
+}
+
+.latest span{
+    float: right;
+    margin-top: 6px;
+    margin-right: 12px;
+}
+.latest sub{
+    margin: 0px 0px 0px 10px;
+}
+
+img::selection{
+    background: #979797a2;
+}
+
+.logo::selection{
+    background: none;
+}
