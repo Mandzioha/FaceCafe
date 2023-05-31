@@ -11,5 +11,5 @@ li:nth-child(3)::after, li:nth-child(4)::after, li:nth-child(7)::after, li:nth-c
     height: 30px;
     margin-left: 20px;
     background-color: rgb(150, 114, 98);
-    z-index: 4;
+    z-index: 2;
 }

@@ -78,14 +78,12 @@ header {
     font-size: 1.5rem;
 }
 
-.spilled-coffee-beans {
-    background-position: 120%;
-    background-size: 100% 140%;
-    background-repeat: no-repeat;
+.spilled-coffee-beans{
+    background-position: 0% 100%;
+    background-size: 100em;
+    background-repeat: repeat;
     width: 100%;
     height: 700px;
-    position: relative;
-    bottom: 1;
 }
 
 footer {
@@ -140,8 +138,8 @@ footer .strap {
     width: 100%;
     height: 1000px;
     margin-top: -160px;
-    background-image: url('assets/subpage-coffee-background.avif');
-    background-size: 100% 140%;
+    background-attachment: fixed;
+    background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -161,10 +159,11 @@ footer .strap {
 } */
 
 .polygon {
+    margin-top: -160px;
     position: absolute;
-    top: 500px;
+    top: 600px;
     width: 100%;
-    height: 400px;
+    height: 421px;
     background-color: white;
     clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
 }
