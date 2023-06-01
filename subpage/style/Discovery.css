@@ -1,0 +1,15 @@
+li:nth-child(1)::after, li:nth-child(2)::after, li:nth-child(3)::after, li:nth-child(4)::after, li:nth-child(9)::after{
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    content: 'Takeaway';
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: rgb(150, 114, 98);
+    z-index: 2;
+}

@@ -121,7 +121,7 @@ header {
     height: 880px;
     margin-top: -160px;
     background-image: url(../Images/coffee_background.png);
-    background-size: 100vw 120vh;
+    background-size: 100% 890px;
     background-repeat: no-repeat;
     /* Opcjonalne */
     background-attachment: fixed;
