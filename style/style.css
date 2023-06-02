@@ -439,7 +439,7 @@ img::selection{
     }
 
     .logo {
-        width: 80px;
+        width: 60px;
         /* height: 80px; */
         margin-left: 20px;
         /* margin-right: 15px; */
@@ -449,7 +449,7 @@ img::selection{
         z-index: 4;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.75);
-        height: 90px;
+        height: 70px;
         position: fixed;
         top: 0;
         transition-duration: 0.2s;
@@ -479,12 +479,12 @@ img::selection{
 
     .link {
         display: flex;
-        height: 90px;
+        height: 70px;
         align-items: center;
-        margin: 0 12.5px;
+        margin: 0 6px;
         color: white;
         text-decoration: none;
-        font-size: 2.05rem;
+        font-size: 1.2rem;
     }
 
     .dropdown-menu {
@@ -529,12 +529,12 @@ img::selection{
     }
 
     .section-one {
-        width: 714px;
+        width: 100%;
         height: 880px;
         /* margin-top: -160px; */
         background-image: url(../Images/coffee_background.png);
-        background-size: 160% 900px;
-        background-position: 50% 0%;
+        background-size: 400% 900px;
+        background-position: 25% 0%;
         background-repeat: no-repeat;
         /* Opcjonalne */
         background-attachment: fixed;
@@ -544,14 +544,14 @@ img::selection{
         margin-top: -160px;
         position: absolute;
         top: 600px;
-        width: 715px;
+        width: 100%;
         height: 421px;
         background-color: white;
         clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
     }
 
     .ad_wrapper {
-        padding-top: 300px;
+        padding-top: 250px;
         height: 300px;
         margin-top: 100px;
         display: flex;
@@ -570,7 +570,7 @@ img::selection{
     }
 
     .albumcover {
-        width: 375px;
+        width: 205px;
     }
 
     .button {
@@ -593,7 +593,7 @@ img::selection{
     }
 
     .section-two {
-        margin: 0 175px;
+        margin: 0 auto;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -609,23 +609,24 @@ img::selection{
     }
 
     .aboutus img {
-        width: 600px;
+        width: 300px;
         border-radius: 20px;
     }
 
     .sub-photo {
         margin-top: -15px;
-        margin-left: 20px;
+        margin-left: 15px;
         align-self: flex-start;
     }
 
     .aboutus h1 {
         margin-top: 50px;
+        font-size: 1.2rem;
     }
 
     .aboutus p {
         text-align: justify;
-        width: 620px;
+        width: 340px;
         font-size: 1.3rem;
         margin-top: 15px;
     }
@@ -636,15 +637,19 @@ img::selection{
         flex-direction: column;
         align-items: center;
     }
+    .products h1{
+        font-size: 1.5rem;
+    }
 
     .products p {
         text-align: justify;
-        width: 620px;
-        font-size: 1.3rem;
+        width: 340px;
+        font-size: 1.2rem;
         margin-top: 15px;
     }
 
     .products h2 {
+        font-size: 1.2rem;
         margin-top: 20px;
         text-align: center;
     }
@@ -653,8 +658,9 @@ img::selection{
         width: 100%;
         padding: auto;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
     }
 
     .To-top {
@@ -696,7 +702,7 @@ img::selection{
     .spilled-coffee-beans {
         background-position: 0% 100%;
         background-size: 100em;
-        background-repeat: repeat;
+        /* background-repeat: repeat; */
         width: 100%;
         height: 700px;
     }
@@ -740,6 +746,7 @@ img::selection{
     }
 
     .product-album-cover {
+        margin: 10px auto;
         width: 250px;
         height: 300px;
         display: flex;
@@ -747,7 +754,7 @@ img::selection{
         justify-content: center;
         align-items: center;
         font-size: 0.9rem;
-        margin: 15px;
+        /* margin: 15px; */
     }
 
     .product-album-cover sub {
@@ -784,28 +791,20 @@ img::selection{
     }
 
     .latest {
-        width: 415px;
-        height: 450px;
+        width: 305px;
+        height: 350px;
         margin-top: 20px;
     }
 
-    .latest::after {
+    .latest::after{
         display: none;
-        width: 300px;
-        font-size: 1.45rem;
-        font-weight: 600;
-        position: absolute;
-        content: '← Our Newest Brew';
-        left: 440px;
-        top: 385px;
-        transform: rotate(5deg);
     }
 
     .latest img {
         z-index: 3;
         width: 94.5%;
-        margin: 0 auto;
-        margin: 10px 10px 0px 11px;
+        /* margin: 0 auto; */
+        margin: 10px 7px 0px 9px;
         transition-duration: 0.1s;
     }
 
@@ -819,10 +818,11 @@ img::selection{
     }
 
     .latest sub {
+        font-size: 0.6rem;
         display: block;
         position: absolute;
         margin: 0px 10px;
-        top: 420px;
+        top: 90%;
         width: 94%;
     }
 
