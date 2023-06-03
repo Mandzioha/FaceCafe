@@ -32,6 +32,18 @@ window.addEventListener('scroll', function () {
   previousScrollPosition = currentScrollPosition;
 });
 
+const screenHeight = window.innerHeight;
+const toTopBtn = document.querySelector('#ToTopBtn');
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition >= screenHeight) {
+    toTopBtn.classList.remove('totophide');
+  } else {
+    toTopBtn.classList.add('totophide');
+  }
+}); 
+
 // var dropdownToggle = document.querySelector('.dropdown-toggle');
 // var dropdownMenu = document.querySelector('.dropdown-menu');
 
