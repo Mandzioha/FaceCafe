@@ -32,35 +32,35 @@ window.addEventListener('scroll', function () {
   previousScrollPosition = currentScrollPosition;
 });
 
-var dropdownToggle = document.querySelector('.dropdown-toggle');
-var dropdownMenu = document.querySelector('.dropdown-menu');
+// var dropdownToggle = document.querySelector('.dropdown-toggle');
+// var dropdownMenu = document.querySelector('.dropdown-menu');
 
-dropdownToggle.addEventListener('mouseover', function () {
-  dropdownMenu.classList.add('active');
-  navstrap.classList.remove('hide');
-  navstrap.classList.remove('hidden');
-});
-dropdownToggle.addEventListener('mouseout', function () {
-  dropdownMenu.classList.remove('active');
-  dropdown_links.forEach((element) => {
-    element.classlist.remove('active');
-  })
-});
-dropdownMenu.addEventListener('mouseover', function () {
-  dropdownMenu.classList.add('active');
-  navstrap.classList.remove('hide');
-  navstrap.classList.remove('hidden');
-});
-dropdownMenu.addEventListener('mouseout', function () {
-  dropdownMenu.classList.remove('active');
-  dropdown_links.forEach((element) => {
-    element.classlist.remove('active');
-  })
-});
+// dropdownToggle.addEventListener('mouseover', function () {
+//   dropdownMenu.classList.add('active');
+//   navstrap.classList.remove('hide');
+//   navstrap.classList.remove('hidden');
+// });
+// dropdownToggle.addEventListener('mouseout', function () {
+//   dropdownMenu.classList.remove('active');
+//   dropdown_links.forEach((element) => {
+//     element.classlist.remove('active');
+//   })
+// });
+// dropdownMenu.addEventListener('mouseover', function () {
+//   dropdownMenu.classList.add('active');
+//   navstrap.classList.remove('hide');
+//   navstrap.classList.remove('hidden');
+// });
+// dropdownMenu.addEventListener('mouseout', function () {
+//   dropdownMenu.classList.remove('active');
+//   dropdown_links.forEach((element) => {
+//     element.classlist.remove('active');
+//   })
+// });
 
-dropdownMenu.addEventListener('scroll', () => {
-  dropdown_links.forEach((element) => {
-    element.style.opacity = '1';
-  })
-  console.log('scrolling');
-})
+// dropdownMenu.addEventListener('scroll', () => {
+//   dropdown_links.forEach((element) => {
+//     element.style.opacity = '1';
+//   })
+//   console.log('scrolling');
+// })
