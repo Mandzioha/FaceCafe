@@ -405,24 +405,11 @@ img::selection{
     text-align: center;
     font-size: 2rem;
 }
-
-@media only screen and (max-width: 360px) {
-    * {
-        margin: 0;
+@media only screen and (min-width: 300px) and (max-width: 326px){
+    .aboutus p {
+        width: 290px;
+        font-size: 0.9rem;
     }
-
-    body {
-        font-family: 'Rubik', sans-serif;
-        width: 360px;
-        overflow-x: hidden;
-        background-repeat: no-repeat;
-    }
-
-    ::selection {
-        color: white;
-        background: #472D2D;
-    }
-
     header {
         width: 100%;
     }
@@ -487,41 +474,8 @@ img::selection{
         font-size: 1.2rem;
     }
 
-    .dropdown-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        top: 90px;
-        margin-right: 85px;
-        /* width: 300px; */
-        height: 500px;
-        visibility: hidden;
-        background-color: rgba(0, 0, 0, 0.75);
-        backdrop-filter: blur(3px);
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        overflow-y: scroll;
-    }
-
     .visible {
         visibility: visible;
-    }
-
-    .dropdown-menu a {
-        padding: 10px;
-        width: 95%;
-        margin: 2.5px 0;
-        font-family: 'Rubik', sans-serif;
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: white;
-        display: block;
-        text-align: right;
-        border: 1px solid rgba(56, 56, 56, 0.445);
-        border-radius: 3px;
-        background-color: rgba(56, 56, 56, 0.445);
-        backdrop-filter: blur(3px);
     }
 
     .active {
@@ -529,44 +483,23 @@ img::selection{
     }
 
     .section-one {
-        width: 100%;
-        height: 880px;
-        /* margin-top: -160px; */
-        background-image: url(../Images/coffee_background.png);
         background-size: 400% 900px;
         background-position: 25% 0%;
-        background-repeat: no-repeat;
-        /* Opcjonalne */
-        background-attachment: fixed;
     }
 
     .polygon {
-        margin-top: -160px;
-        position: absolute;
-        top: 600px;
-        width: 22.5em;
-        height: 421px;
-        background-color: white;
-        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+        width: 100%;
     }
 
     .ad_wrapper {
-        padding-top: 250px;
         height: 300px;
-        margin-top: 100px;
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
     }
 
     .ad_text {
         margin-top: 20px;
         text-align: center;
-        display: block;
         width: 300px;
-        color: white;
-        text-shadow: 1px -1px black;
     }
 
     .albumcover {
@@ -576,76 +509,38 @@ img::selection{
     .button {
         font-size: 1.2rem;
         margin-left: 60px;
-        margin-top: 10px;
+        margin-top: 20px;
         width: 180px;
         height: 50px;
-        cursor: pointer;
-        border: 1px black solid;
-        border-radius: 5px;
-        display: block;
-        transition-duration: 0.25s;
-    }
-
-    .button:hover {
-        background-color: #472D2D;
-        color: white;
-        border: 1px white solid;
-    }
-
-    .section-two {
-        margin: 0 auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutus {
-        padding-top: 25px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .aboutus img {
-        width: 300px;
-        border-radius: 20px;
+        width: 290px;
     }
 
     .sub-photo {
         margin-top: -15px;
         margin-left: 15px;
-        align-self: flex-start;
+        font-size: 0.7rem;
     }
 
     .aboutus h1 {
         margin-top: 50px;
-        font-size: 1.2rem;
-    }
-
-    .aboutus p {
-        text-align: justify;
-        width: 340px;
-        font-size: 1.3rem;
-        margin-top: 15px;
+        font-size: 1.1rem;
     }
 
     .products {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     .products h1{
         font-size: 1.5rem;
     }
 
     .products p {
-        text-align: justify;
-        width: 340px;
+        width: 290px;
         font-size: 1.2rem;
-        margin-top: 15px;
     }
 
     .products h2 {
@@ -655,98 +550,244 @@ img::selection{
     }
 
     .products-container {
-        width: 100%;
-        padding: auto;
-        display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
-        /* justify-content: space-evenly; */
+    }
+
+    footer .strap {
+        width: 100%;
     }
 
     .To-top {
-        width: 65px;
-        height: 65px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        margin: 10px;
-        z-index: 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.75rem;
-        font-weight: 600;
-        background-color: rgba(245, 245, 245, 0.7518);
-        backdrop-filter: blur(3px);
-        border-radius: 100%;
-        box-shadow: 2px 6px 17.5px black;
-        text-decoration: none;
-        color: black;
-        transition-duration: 0.2s;
-    }
-
-    .To-top:hover {
-        background-color: rgba(245, 245, 245, 1);
-    }
-
-    footer {
-        height: 50px;
-        width: 100%;
-        position: absolute;
-        bottom: 1;
-        z-index: 2;
-        margin-top: -50px;
-        /* Junky ale działa */
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
     }
 
     .spilled-coffee-beans {
         background-position: 0% 100%;
-        background-size: 100em;
-        /* background-repeat: repeat; */
         width: 100%;
         height: 700px;
     }
 
-    footer .strap {
-        z-index: 2;
+    .product-album-cover {
+        margin: 25px auto;
+        width: 250px;
+        height: 300px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .product-album-cover sub {
+        display: block;
+        margin: 0px 10px;
+        position: absolute;
+        top: 270px;
+        width: 92%;
+    }
+
+    .product-album-cover span {
+        float: right;
+    }
+
+    .product-album-cover img {
+        width: 92.5%;
+        margin: 0 auto;
+        margin: 9px;
+        margin-bottom: 50px;
+    }
+
+    .latest {
+        width: 270px;
+        height: 330px;
+        margin-top: 20px;
+    }
+
+    .latest::after{
+        display: none;
+    }
+
+    .latest img {
+        z-index: 3;
+        width: 94.5%;
+        /* margin: 0 auto; */
+        margin: 10px 7px 0px 9px;
+        transition-duration: 0.1s;
+    }
+
+    .latest sub {
+        font-size: 0.6rem;
+        top: 90%;
+    }
+}
+@media screen and (max-width: 380px) and (min-width: 326px) {
+    header {
+        width: 100%;
+    }
+
+    #logo {
         color: white;
-        font-weight: 500;
-        font-size: 1.125rem;
-        height: 50px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 60px;
+        /* height: 80px; */
+        margin-left: 20px;
+        /* margin-right: 15px; */
+    }
+
+    .nav_strap {
+        z-index: 4;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.75);
+        height: 70px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
         backdrop-filter: blur(3px);
     }
 
-    .sketchy {
-        margin-bottom: 20px;
-        display: inline-block;
-        border: 3px solid #333333;
-        border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-        background: #ffffff;
-        position: relative;
-        /* z-index: 3; */
+    .hide {
+        top: -120px;
+    }
 
-        &::before {
-            content: "";
-            /* z-index: 3; */
-            border: 2px solid #353535;
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-            border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-        }
+    .hidden * {
+        visibility: hidden;
+    }
+
+    .navigator_tab {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .link {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        margin: 0 6px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+    .active {
+        visibility: visible;
+    }
+
+    .section-one {
+        background-size: 400% 900px;
+        background-position: 25% 0%;
+    }
+
+    .polygon {
+        width: 100%;
+    }
+
+    .ad_wrapper {
+        height: 300px;
+        flex-direction: column-reverse;
+    }
+
+    .ad_text {
+        margin-top: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .albumcover {
+        width: 205px;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        margin-left: 60px;
+        margin-top: 20px;
+        width: 180px;
+        height: 50px;
+    }
+
+    .aboutus img {
+        width: 300px;
+    }
+
+    .sub-photo {
+        margin-top: -15px;
+        margin-left: 15px;
+    }
+
+    .aboutus h1 {
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .aboutus p {
+        width: 320px;
+        font-size: 1rem;
+    }
+
+    .products {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .products h1{
+        font-size: 1.5rem;
+    }
+
+    .products p {
+        width: 340px;
+        font-size: 1.2rem;
+    }
+
+    .products h2 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .products-container {
+        flex-direction: column;
+    }
+
+    footer .strap {
+        width: 100%;
+    }
+
+    .To-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .spilled-coffee-beans {
+        background-position: 0% 100%;
+        width: 100%;
+        height: 700px;
     }
 
     .product-album-cover {
-        margin: 10px auto;
+        margin: 25px auto;
         width: 250px;
         height: 300px;
         display: flex;
@@ -776,18 +817,222 @@ img::selection{
         margin-bottom: 50px;
     }
 
-    .album-img {
-        transition: 0.1s;
-        position: relative;
+    .latest {
+        width: 305px;
+        height: 350px;
+        margin-top: 20px;
     }
 
-    .album-img:hover {
-        border-radius: 10px;
+    .latest::after{
+        display: none;
+    }
+
+    .latest img {
+        z-index: 3;
         width: 94.5%;
-        margin: -50px 7px 0px 7px;
-        /* right: 1.25px; */
-        box-shadow: 0px 10px 10px black;
-        opacity: 0.87;
+        /* margin: 0 auto; */
+        margin: 10px 7px 0px 9px;
+        transition-duration: 0.1s;
+    }
+
+    .latest sub {
+        font-size: 0.6rem;
+        top: 90%;
+    }
+}
+@media screen and (min-width: 380px) and (max-width: 430px) {
+    header {
+        width: 100%;
+    }
+
+    #logo {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 60px;
+        /* height: 80px; */
+        margin-left: 20px;
+        /* margin-right: 15px; */
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 70px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+
+    .hide {
+        top: -120px;
+    }
+
+    .hidden * {
+        visibility: hidden;
+    }
+
+    .navigator_tab {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .link {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        margin: 0 6px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+    .active {
+        visibility: visible;
+    }
+
+    .section-one {
+        background-size: 400% 900px;
+        background-position: 25% 0%;
+    }
+
+    .polygon {
+        width: 100%;
+    }
+
+    .ad_wrapper {
+        height: 300px;
+        flex-direction: column-reverse;
+    }
+
+    .ad_text {
+        margin-top: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .albumcover {
+        width: 205px;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        margin-left: 60px;
+        margin-top: 20px;
+        width: 180px;
+        height: 50px;
+    }
+
+    .aboutus img {
+        width: 300px;
+    }
+
+    .sub-photo {
+        margin-top: -15px;
+        margin-left: 15px;
+    }
+
+    .aboutus h1 {
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .aboutus p {
+        width: 320px;
+        font-size: 1rem;
+    }
+
+    .products {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .products h1{
+        font-size: 1.5rem;
+    }
+
+    .products p {
+        width: 340px;
+        font-size: 1.2rem;
+    }
+
+    .products h2 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .products-container {
+        flex-direction: column;
+    }
+
+    footer .strap {
+        width: 100%;
+    }
+
+    .To-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .spilled-coffee-beans {
+        background-position: 0% 100%;
+        width: 100%;
+        height: 700px;
+    }
+
+    .product-album-cover {
+        margin: 25px auto;
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        /* margin: 15px; */
+    }
+
+    .product-album-cover sub {
+        display: block;
+        margin: 0px 10px;
+        position: absolute;
+        top: 270px;
+        width: 92%;
+    }
+
+    .product-album-cover span {
+        float: right;
+    }
+
+    .product-album-cover img {
+        width: 92.5%;
+        margin: 0 auto;
+        margin: 9px;
+        margin-bottom: 50px;
     }
 
     .latest {
@@ -808,29 +1053,8 @@ img::selection{
         transition-duration: 0.1s;
     }
 
-    .latest img:hover {
-        width: 95.5%;
-        margin: 0px 6px 0px 9.5px;
-    }
-
-    .latest span {
-        float: right;
-    }
-
     .latest sub {
         font-size: 0.6rem;
-        display: block;
-        position: absolute;
-        margin: 0px 10px;
         top: 90%;
-        width: 94%;
-    }
-
-    img::selection {
-        background: #979797a2;
-    }
-
-    .logo::selection {
-        background: none;
     }
 }
