@@ -1,6 +1,3 @@
-if (/Android|iPhone/i.test(navigator.userAgent)) {
-  document.querySelector('body').innerHTML = '<h1 class="mobile">Currently only on Desktop ;)</h1>';
-}
 const navstrap = document.querySelector('#navstrap');
 
 window.addEventListener('scroll', ()=> {
@@ -25,3 +22,15 @@ window.addEventListener('scroll', function() {
 
   previousScrollPosition = currentScrollPosition;
 });
+
+const screenHeight = window.innerHeight;
+const toTopBtn = document.querySelector('#ToTopBtn');
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition >= screenHeight) {
+    toTopBtn.classList.remove('totophide');
+  } else {
+    toTopBtn.classList.add('totophide');
+  }
+}); 

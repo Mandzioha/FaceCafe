@@ -1,6 +1,3 @@
-// if (/Android|iPhone/i.test(navigator.userAgent)) {
-//   document.querySelector('body').innerHTML = '<h1 class="mobile">Currently only on Desktop ;)</h1>';
-// }
 const navstrap = document.querySelector('#navstrap');
 const getbtn = document.querySelector("#getbutton");
 const dropdown_links = document.querySelectorAll('dropdown-menu a');

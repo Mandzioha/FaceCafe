@@ -176,13 +176,20 @@ footer .strap {
     align-items: center;
     font-size: 1.75rem;
     font-weight: 600;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.7518);
     border-radius: 100%;
     box-shadow: 6px 6px 17.5px black;
     text-decoration: none;
     color: black;
+    transition: 0.5s ease-in-out;
 }
-
+.To-top:hover{
+    background-color: rgba(245, 245, 245, 1);
+}
+.totophide{
+    transition-duration: 5s;
+    display: none;
+}
 img::selection {
     background: #979797a2;
 }
@@ -250,4 +257,527 @@ iframe {
 .mobile{
     text-align: center;
     font-size: 2rem;
+}
+@media screen and (min-width: 300px) and (max-width: 380px) {
+    .link{
+        margin-right: 30px;
+    }
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .subpage-section-one img{
+        width: 280px;
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+
+    .navigator_tab {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hide {
+        top: -90px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+    
+    ol {
+        font-size: 1rem;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    .push{
+        margin-left: 0px;
+    }
+    li span {
+        margin: 0 0px;
+    }
+    .subpage-section-two h1 {
+        font-size: 1.6rem;
+        color: black;
+        margin: 100px 0px 50px;
+    }
+    .ytmusic {
+        margin: 10px;
+        background-color: rgb(196, 33, 33);
+        border-radius: 12px;
+        width: 270px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    iframe{
+        width: 250px;
+        margin: 10px auto;
+    }
+    .To-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    .subpage-section-one {
+        margin-top: -80px;
+        background-size: 300vw 100vh;
+    }
+    .polygon {
+        margin-top: -80px;
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 421px;
+        background-color: white;
+        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 430px) {
+    .link{
+        margin-right: 30px;
+    }
+    
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .subpage-section-one img{
+        width: 300px;
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+
+    .navigator_tab {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hide {
+        top: -80px;
+    }
+    
+    .subpage-section-two h1 {
+        font-size: 2rem !important;
+        color: black;
+        margin: 100px 0px 50px;
+    }
+    
+    ol {
+        font-size: 1.4rem;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    .push{
+        margin-left: 0px;
+    }
+    li span {
+        margin: 0 0px;
+    }
+    .ytmusic {
+        margin: 10px;
+        background-color: rgb(196, 33, 33);
+        border-radius: 12px;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    iframe{
+        width: 300px;
+        margin: 10px auto;
+    }
+    .To-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    .subpage-section-one {
+        margin-top: -80px;
+        background-size: 300vw 100vh;
+    }
+    .polygon {
+        margin-top: -80px;
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 421px;
+        background-color: white;
+        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+    }
+}
+@media screen and (min-width: 430px) and (max-width: 480px) {
+    .link{
+        margin-right: 30px;
+    }
+    
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .subpage-section-one img{
+        width: 380px;
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+    
+    .subpage-section-two h1 {
+        font-size: 2.5rem !important;
+        color: black;
+        margin: 100px 0px 50px;
+    }
+    
+    ol {
+        font-size: 1.6rem;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    .push{
+        margin-left: 0px;
+    }
+    li span {
+        margin: 0 0px;
+    }
+    .ytmusic {
+        margin: 10px;
+        background-color: rgb(196, 33, 33);
+        border-radius: 12px;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    iframe{
+        width: 300px;
+        margin: 10px auto;
+    }
+    .To-top {
+        width: 60px;
+        height: 60px;
+        font-size: 1.75rem;
+    }
+    .subpage-section-one {
+        margin-top: -80px;
+        background-size: 300vw 100vh;
+    }
+    .polygon {
+        margin-top: -80px;
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 421px;
+        background-color: white;
+        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    .link{
+        margin-right: 30px;
+    }
+    
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .subpage-section-one img{
+        width: 380px;
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+    
+    .subpage-section-two h1 {
+        font-size: 2.5rem !important;
+        color: black;
+        margin: 100px 0px 50px;
+    }
+    
+    ol {
+        font-size: 1.6rem;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    .push{
+        margin-left: 0px;
+    }
+    li span {
+        margin: 0 0px;
+    }
+    .ytmusic {
+        margin: 10px;
+        background-color: rgb(196, 33, 33);
+        border-radius: 12px;
+        width: 360px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    iframe{
+        width: 360px;
+        margin: 10px auto;
+    }
+    .To-top {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    .subpage-section-one {
+        margin-top: -80px;
+        background-size: 300vw 100vh;
+    }
+    .polygon {
+        margin-top: -80px;
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 421px;
+        background-color: white;
+        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .link{
+        margin-right: 30px;
+    }
+    
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .subpage-section-one img{
+        width: 500px;
+        margin-bottom: 200px;
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+    
+    .subpage-section-two h1 {
+        font-size: 2.5rem !important;
+        color: black;
+        margin: 100px 0px 50px;
+    }
+    
+    ol {
+        font-size: 1.6rem;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    .push{
+        margin-left: 0px;
+    }
+    li span {
+        margin: 0 0px;
+    }
+    .ytmusic {
+        margin: 10px;
+        background-color: rgb(196, 33, 33);
+        border-radius: 12px;
+        width: 360px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    iframe{
+        width: 360px;
+        margin: 10px auto;
+    }
+    .To-top {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    .subpage-section-one {
+        margin-top: -80px;
+        background-size: 300vw 100vh;
+    }
+    .polygon {
+        margin-top: -80px;
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 421px;
+        background-color: white;
+        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1070px) {
+    .link{
+        margin-right: 30px;
+    }
+    
+    .text-logo{
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .subpage-section-one img{
+        width: 500px;
+        margin-bottom: 200px;
+    }
+
+    .nav_strap {
+        z-index: 4;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        transition-duration: 0.2s;
+        backdrop-filter: blur(3px);
+    }
+    
+    .subpage-section-two h1 {
+        font-size: 2.5rem !important;
+        color: black;
+        margin: 100px 0px 50px;
+    }
+    
+    ol {
+        font-size: 1.6rem;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    .push{
+        margin-left: 0px;
+    }
+    li span {
+        margin: 0 0px;
+    }
+    .ytmusic {
+        margin: 10px;
+        background-color: rgb(196, 33, 33);
+        border-radius: 12px;
+        width: 360px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    iframe{
+        width: 360px;
+        margin: 10px auto;
+    }
+    .To-top {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    .subpage-section-one {
+        margin-top: -80px;
+        background-size: 100vw 100vh;
+    }
+    .polygon {
+        margin-top: -80px;
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 421px;
+        background-color: white;
+        clip-path: polygon(0% 56%, 4% 64%, 10% 63%, 14% 66%, 19% 66%, 23% 65%, 26% 68%, 31% 69%, 36% 68%, 40% 67%, 45% 69%, 45% 69%, 51% 69%, 55% 68%, 59% 70%, 62% 70%, 68% 70%, 75% 70%, 77% 69%, 80% 69%, 85% 72%, 89% 71%, 92% 70%, 95% 71%, 97% 69%, 100% 67%, 100% 100%, 0% 100%);
+    }
+}
+@media screen and (min-width: 1070px){
+    .subpage-section-one {
+        width: 100%;
+        height: 1000px;
+        margin-top: -160px;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-attachment: fixed;
+    }
 }

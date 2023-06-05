@@ -1,3 +1,4 @@
+@media screen and (min-width: 500px){
 li:nth-child(3)::after, li:nth-child(9)::after{
     position: absolute;
     display: inline-flex;
@@ -12,4 +13,5 @@ li:nth-child(3)::after, li:nth-child(9)::after{
     margin-left: 20px;
     background-color: rgb(150, 114, 98);
     z-index: 2;
+}
 }
